@@ -5,6 +5,7 @@ CREATE TABLE USUARIO
 	sobrenome varchar(45),
 	email varchar(45),
 	senha char(10),
+	CPF char(14),
 	PRIMARY KEY (matricula)
 );
 
