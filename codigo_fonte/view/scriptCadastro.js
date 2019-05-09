@@ -1,5 +1,4 @@
 $("#cpf").mask("00000000000");
-$("#matricula").mask("000000000");
 
 function alteraConteudo() {
 	var e = document.getElementById("tipo");
@@ -30,10 +29,6 @@ function validar() {
    		document.getElementById("nome").value == "" || document.getElementById("sobrenome").value == "" || 
    		document.getElementById("matricula").value == ""){   		
    		alert("Preencha todos os dados");
-   		return false;
-   	}
-   	if(document.getElementById("matricula").value != 9){
-   		alert("Matrícula inválida");
    		return false;
    	}
     if(document.getElementById("cpf").value.length != 11 || document.getElementById("cpf").value == "00000000000"
