@@ -9,6 +9,6 @@
 		private $disciplinas;
 		private $cursando;
 		private $aprovado;
-		private $lida;
+		private $lida; 
 	}
 ?>

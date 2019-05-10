@@ -20,7 +20,7 @@
 		public static function getConn(){
 			if (self::$conn===null){
 				try {
-					self::$conn = new PDO("mysql:host=$servername;dbname=oa_db", $username, $password);
+					self::$conn = new PDO("mysql:host=localhost;dbname=oa_db", self::$username, self::$password);
 					self::$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 					echo "Conectado com sucesso";
 				}

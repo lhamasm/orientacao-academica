@@ -1,5 +1,5 @@
 <?php
-	require_once "DataGetter.php"
+	require_once ('DataGetter.php');
 	
 	class Usuario {
 		private $nome;
@@ -9,38 +9,24 @@
 		private $matricula;
 		private $cpf;
 
-		public recuperarSenha($cpf){
+		public function recuperarSenha($cpf){
 
-		}
+		} // luis
 
-		public efetuarLogin($matricula, $senha){
+		public function efetuarLogin($matricula, $senha){
 
-		}
+		} // cardel
 
-		public efetuarLogout(){
+		public function efetuarLogout(){
 
-		}
+		} // larissa
 
-		public efetuarCadastro($nome, $sobrenome, $senha, $email, $matricula, $cpf, $departamento){
-			$sql = "INSERT INTO USUARIO VALUES ('" . $matricula . "', '" . $nome . "', '" . $sobrenome . "', '" . $senha . "')";
-			DataGetter::getConn()->exec($sql);
-			$sql = "INSERT INTO PROFESSOR VALUES ('" . $matricula . "', '" . $departamento . "')";
-			DataGetter::getConn()->exec($sql);
-		}
+		public function alterarSenha($senhaAntiga, $senhaNova){
 
-		public efetuarCadastro($nome, $sobrenome, $senha, $email, $matricula, $cpf, $curso, $semestre){
-			$sql = "INSERT INTO USUARIO VALUES ('" . $matricula . "', '" . $nome . "', '" . $sobrenome . "', '" . $senha . "')";
-			DataGetter::getConn()->exec($sql);
-			$sql = "INSERT INTO ALUNO VALUES ('" . $matricula . "', " . $curso . ", ". $semestre .")";
-			DataGetter::getConn()->exec($sql);
-		}
+		} // luis
 
-		public alterarSenha($senhaAntiga, $senhaNova){
+		public function alterarCadastro($nome, $sobrenome, $email, $matricula, $cpf){
 
-		}
-
-		public alterarCadastro($nome, $sobrenome, $email, $matricula, $cpf){
-
-		}
+		} // cardel
 	}
 ?>
