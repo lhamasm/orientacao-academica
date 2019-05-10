@@ -30,3 +30,11 @@ body{
 	top: -12px;
 	left: -15px;
 }
+#botaoGrade{
+	background-color: #17A589;
+	color: white;
+	font-size: 1.15em;
+}
+#botaoGrade:hover{
+	background-color: #148F77;
+}
