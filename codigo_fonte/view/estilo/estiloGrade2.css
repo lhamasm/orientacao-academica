@@ -1,0 +1,58 @@
+h6 {
+	margin-bottom: 1.5em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.container {
+	margin-left: 4em;
+	margin-right: 4em;
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+.modal-dialog {
+	max-width: 48em;
+}
+
+.modal-body {
+	margin-right: 2.3em;
+	margin-left: 0em;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 30em;
+}
+
+.botao-materia-expandida p {
+	font-size: 0.8em;
+	color: #f0f5f5;
+}
+
+.materias {
+	border-radius: 0.3em;
+	margin-bottom: 0.1em;
+	width: 100%;
+	background-color: #B7B7B7;
+	font-family: "Futura Bk BT", "Geneva", "Tahoma";
+}
+
+.materias:hover {
+	background-color: #68BBF1;
+}
+
+#adicionar-materias {
+	height: 8em;
+	width: 12em;
+	background-color: #e8eaed;
+	color: white;
+}
+
+#adicionar-materias i {
+	font-size: 3em;
+}
+
+#adicionar-materias:hover {
+	background-color: #B7B7B7;
+}
