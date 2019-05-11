@@ -82,7 +82,7 @@ function identificaDiscOp(id){
 	document.getElementById("discEscolhida").innerHTML = "op" + id;
 	document.getElementById("tipoDisc").innerHTML = "op";
 	document.getElementById("discNome").innerHTML = document.getElementById("op" + id).innerHTML;
-	if(document.getElementById("op" + id).style.color != "rgb(65, 186, 158)"){
+	if(document.getElementById("op" + id).style.backgroundColor != "rgb(192, 229, 220)"){
 		document.getElementById("botaoModal").classList.add('btn-success');
 		document.getElementById("botaoModal").classList.remove('btn-danger');
 		document.getElementById("botaoModal").innerHTML = "Adicionar à grade";
@@ -106,12 +106,12 @@ function alterarMateria(){
 		}
 	}
 	else{
-		if(document.getElementById(materiaEscolhida).style.color != "rgb(65, 186, 158)"){
-			document.getElementById(materiaEscolhida).style.color = "#41BA9E";
+		if(document.getElementById(materiaEscolhida).style.backgroundColor != "rgb(192, 229, 220)"){
+			document.getElementById(materiaEscolhida).style.backgroundColor = "#C0E5DC";
 			document.getElementById("operacaoDisc").innerHTML = "adicionar";
 		}
 		else{
-			document.getElementById(materiaEscolhida).style.color = "#0A00F9";
+			document.getElementById(materiaEscolhida).style.backgroundColor = "#D0D5FA";
 			document.getElementById("operacaoDisc").innerHTML = "remover";			
 		}
 	}

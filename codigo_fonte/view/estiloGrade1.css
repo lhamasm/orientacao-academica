@@ -21,7 +21,7 @@ body{
 	font-size: 0.8em;
 	align-content: center;
 	height: 8em;
-	width: 13em;
+	width: 12em;
 	background-color: #B7B7B7;
 }
 
@@ -38,7 +38,8 @@ body{
 .link-optativas{
 	font-size: 1em;
 	display: block;
-	color: #0A00F9;
+	background-color: #D0D5FA;
+	margin-bottom: 5px;
 }
 
 #disciplinasTotal, #nomeDisciplinas{
