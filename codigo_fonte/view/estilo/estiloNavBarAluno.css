@@ -1,6 +1,6 @@
 #icone-user{
 	font-size: 3.8em;
-	color: rgb(240, 240, 240);
+	color: rgb(230, 230, 230);
 	position: relative;
 	bottom: -5px;
 }
@@ -11,9 +11,17 @@
 #nome{
 	font-size: 1.1em;
 	display: block;
+	font-weight: bold;
 }
 #navbar{
-	background-color: #5a7b9d;
+	background-color: #5498C1;
+}
+.btn-alterar{
+	background-color: #6ECA99;
+	color: white;
+}
+.btn-alterar:hover{
+	background-color: #6CE2A3;
 }
 #notif{
 	font-size: 1.6em;

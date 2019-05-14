@@ -4,6 +4,14 @@ document.getElementById("optativas").style.backgroundColor = "white";
 document.getElementById("optativas").style.color = "black";
 var selecionado = "obg";
 
+function redirectMsg(){
+	 location.href="../telas/inbox.html" 
+}
+
+function redirectHome(){
+	 location.href="../telas/homepageAluno.html" 
+}
+
 function trocaCor(tipo){
 	if(tipo == 'obg'){
 		if(document.getElementById("obrigatorias").style.backgroundColor == "white"){
@@ -137,5 +145,5 @@ function preencheGrade(){
 }
 
 function redirect(){
-	location.href = "./montarGrade.html";
+	location.href = "../telas/montarGrade2.html";
 }

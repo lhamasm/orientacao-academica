@@ -22,10 +22,13 @@ ul {
 	margin-left: 0em;
 	overflow-y: auto;
 	overflow-x: hidden;
-	height: 30em;
+	height: 20em;
 }
 
-.botao-materia-expandida p {
+.botao-materia-expandida{
+	display: none;
+}
+.botao-materia-expandida span {
 	font-size: 0.8em;
 	color: #f0f5f5;
 }
@@ -36,6 +39,8 @@ ul {
 	width: 100%;
 	background-color: #B7B7B7;
 	font-family: "Futura Bk BT", "Geneva", "Tahoma";
+	white-space: normal;
+	text-align: left;
 }
 
 .materias:hover {
