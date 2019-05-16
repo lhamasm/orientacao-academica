@@ -1,5 +1,9 @@
 $("#cpf").mask("00000000000");
 
+function redirectIndex(){
+   location.href="../telas/index.html" 
+}
+
 function alteraConteudo() {
 	var e = document.getElementById("tipo");
 	var itemSelecionado = e.options[e.selectedIndex].value;

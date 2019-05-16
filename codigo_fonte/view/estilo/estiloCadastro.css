@@ -15,6 +15,7 @@ body{
 } 
 #icone-cadastro{
 	font-size: 5em;
+	cursor: pointer;
 }
 #container-cadastro{
 	background-color: white;

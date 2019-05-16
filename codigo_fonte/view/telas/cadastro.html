@@ -17,13 +17,13 @@
 
 <body> 
     <div class = "container-fluid">
-        <span class = "text-center"> <i class="mt-4 col-12 fas fa-graduation-cap" id = "icone-cadastro"></i> </span>   
+        <span class = "text-center" onclick = "redirectIndex();"> <i class="mt-4 col-12 fas fa-graduation-cap" id = "icone-cadastro"></i> </span>   
         <h3 class = "mt-1 text-center" id = "titulo"> Orientação Acadêmica </h3>
         <div class = "mt-3 container shadow" id = "container-cadastro">
             <form name = "form-cadastro" onsubmit = "return validar();"> 
             	<div class = "form-group mt-3">
                     <label for = "tipo"> Tipo de Usuário </label>
-                    <select id="tipo" onchange="alteraConteudo();">
+                    <select class = "form-control" id="tipo" onchange="alteraConteudo();">
                     	<option value="default" id="default" selected="selected">Selecione</option>	
 					  	<option value="tipo1" id="t1">Estudante</option>
 					  	<option value="tipo2" id="t2">Docente</option>
@@ -67,24 +67,21 @@
 	                </div>
 	                <div class = "col-6 form-group" id="prof-departamento">
 	                    <label for = "dep"> Departamento </label> <br>
-                    	<select id="dep">
+                    	<select class = "form-control" id="dep">
                     		<option value="dep1" id="d1">Departamento de Ciência da Computação</option>
 						</select>
-	                </div>	                
-	            </div>
-	            <div class= "row">
-	            	<div class = "col-6 form-group" id="aluno-semestre">
+	                </div>
+	                <div class = "col-4 form-group" id="aluno-curso">
+	                    <label for = "curso"> Curso </label> <br>
+                    	<select class = "form-control" id="curso">
+                    		<option value="curso1" id="c1">Ciência da Computação</option>
+						</select>
+	                </div>	                               
+	            	<div class = "col-2 form-group" id="aluno-semestre">
 	                    <label for = "semestre"> Semestre </label>
 	                     <input type = "number" class = "form-control" id = "semestre" min="1">        	
 	                </div>
-	                <div class = "col-6 form-group" id="aluno-curso">
-	                    <label for = "curso"> Curso </label> <br>
-                    	<select id="curso">
-                    		<option value="curso1" id="c1">Ciência da Computação</option>
-						</select>
-	                </div>
 	            </div>
-
                 <button type = "submit" class = "mt-2 mb-3 col-12 btn btn-info"> Sign Up </button>
             </form>
         </div>
