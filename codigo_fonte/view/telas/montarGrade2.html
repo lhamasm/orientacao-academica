@@ -10,6 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="../estilo/estiloNavBarAluno.css">
     <link rel="stylesheet" type="text/css" href="../estilo/estiloGrade2.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -51,10 +52,24 @@
     </nav>
     
     <div class="container">
-    	<form>
-	    	<h6>Matérias que estou cursando este semestre</h6>
-	    	<div class="row">
+    	<form autocomplete="off">
+	    	<h6>MATÉRIAS QUE ESTOU CURSANDO ESTE SEMESTRE</h6>
+	    	<div class="row form-group">
+	    		<div>
+	    			<div class="materias-selecionadas container-fluid">
+	    				<div class="row">
+	    					<button class="offset-11" type="button">&times;</button>
+	    				</div>
+	    				<p class="codigo">MATA60</p> <p class="titulomateria">Compiladores</p> 
+	    			</div>
+	    		</div>
 	    		<button type="button" class="btn" id="adicionar-materias" data-toggle="modal" data-target="#lista-de-materias" data-backdrop="static" keybord="false"><i class="fas fa-plus"></i></button>
+	    	</div>
+
+	    	<h6 class="mt-5">ESCOLHA O ORIENTADOR</h6>
+	    	<div class="row form-group autocomplete">
+	    		<input type="text" name="orientador" id="input-orientador" class="form-control col-11">
+	    		<button type="button" class="btn btn-secondary"><i class="fas fa-plus"></i></button>
 	    	</div>
 	    </form>
     </div>
