@@ -1,6 +1,6 @@
 <?php
-	require_once('/opt/lampp/htdocs/PHPMailer.php'); //chama a classe de onde você a colocou.
-	require_once('/opt/lampp/htdocs/SMTP.php');
+	require_once('PHPMailer.php'); //chama a classe de onde você a colocou.
+	require_once('SMTP.php');
 
 	class Email {
 		private $mail;
@@ -29,21 +29,6 @@
 
 			$this->mail->From = 'machad.lari@gmail.com'; 
 			$this->mail->FromName = 'Orientação Acadêmica'; 
-		}
-
-		private function gerarNovaSenha() {
-			$novaSenha = '';
-
-			for($i=0; $i<9; $i++){
-				$numero = rand(48, 122);
-				if( ($numero >= 48 && $numero <= 57) || ($numero >= 65 && $numero <= 90) || ($numero >= 97 && $numero <= 122) ) {
-					$novaSenha .= chr($numero);
-				} else {
-					$i--;
-				}
-			}
-
-			return $novaSenha;
 		}
 
 		public function recuperarSenhaEmail($email){
